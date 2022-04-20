@@ -9,10 +9,19 @@ import { BrowserRouter as Router, useRoutes } from "react-router-dom";
 
 import routes from "~react-pages";
 
-
-console.log(routes)
+console.log(routes);
 const App = () => {
-  return <Suspense fallback={<p>Loading...</p>}>{useRoutes(routes)}</Suspense>;
+  return (
+    <Suspense
+      fallback={
+        <section className={"h-screen bg-black text-white text-4xl grid place-content-center"}>
+          <h1>xenovrs</h1>
+        </section>
+      }
+    >
+      {useRoutes(routes)}
+    </Suspense>
+  );
 };
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
