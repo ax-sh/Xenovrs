@@ -19,8 +19,19 @@ code {
 .masonary {
   figure {
     @apply flex flex-col;
-    img{
-      @apply flex-grow object-cover h-full
+    img {
+      @apply flex-grow object-cover h-full;
     }
+  }
+}
+
+a {
+  text-decoration: none;
+  &:visited,
+  & {
+    color: white;
+  }
+  &:hover {
+    color: gray;
   }
 }
