@@ -7,7 +7,7 @@ import { CgFacebook } from "react-icons/cg";
 import { ImTwitter } from "react-icons/im";
 
 function NavLogo() {
-  return <div>xenovrs</div>;
+  return <figure className={'text-3xl'}>xenovrs</figure>;
 }
 
 function NavLinks() {
@@ -28,7 +28,7 @@ function NavLinks() {
 const list = ["HOME", "PAGES", "PAGES", "PAGES", "PAGES"];
 function NavRoutes() {
   return (
-    <List className={"flex gap-10"}>
+    <List className={"flex gap-10 font-bold"}>
       {list.map((i) => (
         <a>{i}</a>
       ))}
