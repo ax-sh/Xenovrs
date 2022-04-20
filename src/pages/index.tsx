@@ -33,6 +33,7 @@ function Page() {
           <Header>Creative</Header>
           <Header>Color</Header>
           <Header>Cheme</Header>
+          <button className={"bg-yellow text-black px-20 py-2"}>SEE PROJECT</button>
         </div>
       </PresentSection>
       <PresentSection imageUrl={"https://source.unsplash.com/-v7EOw5SA4I"}>
