@@ -5,5 +5,7 @@ import Pages from "vite-plugin-pages";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [WindiCSS(), react(), Pages()],
+  plugins: [
+      WindiCSS(),
+    react(), Pages()],
 });
