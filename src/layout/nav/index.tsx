@@ -7,7 +7,7 @@ import { CgFacebook } from "react-icons/cg";
 import { ImTwitter } from "react-icons/im";
 
 function NavLogo() {
-  return <figure className={'text-3xl'}>xenovrs</figure>;
+  return <figure className={"text-3xl"}>xenovrs</figure>;
 }
 
 function NavLinks() {
@@ -38,11 +38,7 @@ function NavRoutes() {
 
 export default function Nav() {
   return (
-    <nav
-      className={
-        "px-20 text-white fixed w-full flex justify-between items-center py-10"
-      }
-    >
+    <nav className={"page-nav"}>
       <NavLogo />
       <NavRoutes />
       <NavLinks />
