@@ -15,3 +15,12 @@ code {
 .page-nav {
   @apply px-20 text-white fixed w-full flex justify-between items-center py-10;
 }
+
+.masonary {
+  figure {
+    @apply flex flex-col;
+    img{
+      @apply flex-grow object-cover h-full
+    }
+  }
+}
