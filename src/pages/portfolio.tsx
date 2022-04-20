@@ -1,12 +1,12 @@
 import Layout from "../layout";
 
-const HomePage = () => {
+const ContactPage = () => {
   return (
     <Layout>
       <section className={"h-screen text-white text-8xl bg-black grid place-items-center"}>
-        HomePage
+        Portfolio
       </section>
     </Layout>
   );
 };
-export default HomePage;
+export default ContactPage;

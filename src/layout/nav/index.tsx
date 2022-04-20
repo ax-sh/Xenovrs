@@ -8,7 +8,11 @@ import { ImTwitter } from "react-icons/im";
 import { Link } from "react-router-dom";
 
 function NavLogo() {
-  return <figure className={"text-3xl"}>xenovrs</figure>;
+  return (
+    <figure className={"text-3xl"}>
+      <Link to={"/"}>xenovrs</Link>
+    </figure>
+  );
 }
 
 function NavLinks() {
@@ -26,9 +30,13 @@ function NavLinks() {
     </List>
   );
 }
-const list = ["HOME",
-    // "PAGES",
-    "Portfolio", "Blog", "Contact"];
+const list = [
+  "HOME",
+  // "PAGES",
+  "Portfolio",
+  "Blog",
+  "Contact",
+];
 function NavRoutes() {
   return (
     <List className={"flex gap-10 font-bold uppercase"}>
