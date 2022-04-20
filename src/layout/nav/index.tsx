@@ -25,10 +25,10 @@ function NavLinks() {
     </List>
   );
 }
-const list = ["HOME", "PAGES", "PAGES", "PAGES", "PAGES"];
+const list = ["HOME", "PAGES", "Portfolio", "Blog", "Contact"];
 function NavRoutes() {
   return (
-    <List className={"flex gap-10 font-bold"}>
+    <List className={"flex gap-10 font-bold uppercase"}>
       {list.map((i) => (
         <a>{i}</a>
       ))}
