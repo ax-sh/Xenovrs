@@ -2,14 +2,15 @@ import React from "react";
 import clsx from "clsx";
 import Nav from "./nav";
 
-export function List({
-  children,
-  ...props
-}: React.HTMLProps<HTMLUListElement>) {
+interface ListProps extends React.HTMLProps<HTMLUListElement> {
+  render?: (props: any) => React.ReactNode;
+}
+
+export function List({ children, render, ...props }: ListProps) {
   return (
     <ul className={"list"} {...props}>
       {React.Children.map(children, (child, index) => (
-        <li key={index}>{child}</li>
+        <li key={index}>{render ? render(child) : child}</li>
       ))}
     </ul>
   );

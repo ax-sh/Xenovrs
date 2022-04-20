@@ -3,6 +3,8 @@ import { List } from "../index";
 
 import { SiInstagram } from "react-icons/si";
 import { FaLinkedinIn } from "react-icons/fa";
+import { CgFacebook } from "react-icons/cg";
+import { ImTwitter } from "react-icons/im";
 
 function NavLogo() {
   return <div>xenovrs</div>;
@@ -10,10 +12,17 @@ function NavLogo() {
 
 function NavLinks() {
   return (
-    <div>
-      <SiInstagram size={28} />
+    <List
+      className={"flex gap-2"}
+      render={(child) => (
+        <div className={"w-10 h-10 grid place-content-center"}>{child}</div>
+      )}
+    >
       <FaLinkedinIn size={28} />
-    </div>
+      <CgFacebook size={28} />
+      <SiInstagram size={28} />
+      <ImTwitter size={28} />
+    </List>
   );
 }
 const list = ["HOME", "PAGES", "PAGES", "PAGES", "PAGES"];
@@ -29,7 +38,11 @@ function NavRoutes() {
 
 export default function Nav() {
   return (
-    <nav className={"flex justify-between items-center py-10"}>
+    <nav
+      className={
+        "px-20 text-white fixed w-full flex justify-between items-center py-10"
+      }
+    >
       <NavLogo />
       <NavRoutes />
       <NavLinks />
