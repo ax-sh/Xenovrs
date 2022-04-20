@@ -1,7 +1,8 @@
 import React from "react";
 import { List } from "../index";
 
-import { SiInstagram } from "react-icons/all";
+import { SiInstagram } from "react-icons/si";
+import { FaLinkedinIn } from "react-icons/fa";
 
 function NavLogo() {
   return <div>xenovrs</div>;
@@ -11,6 +12,7 @@ function NavLinks() {
   return (
     <div>
       <SiInstagram size={28} />
+      <FaLinkedinIn size={28} />
     </div>
   );
 }
