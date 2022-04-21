@@ -30,7 +30,7 @@ function NavLinks() {
     </List>
   );
 }
-const list = [
+export const navRoutesList = [
   "HOME",
   // "PAGES",
   "Portfolio",
@@ -40,7 +40,7 @@ const list = [
 function NavRoutes() {
   return (
     <List className={"flex gap-10 font-bold uppercase"}>
-      {list.map((i) => (
+      {navRoutesList.map((i) => (
         <Link to={"/" + i.toLowerCase()}>{i}</Link>
       ))}
     </List>

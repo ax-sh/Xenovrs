@@ -1,6 +1,6 @@
 import React from "react";
 import clsx from "clsx";
-import Nav from "./nav";
+import Nav, { navRoutesList } from "./nav";
 
 interface ListProps extends React.HTMLProps<HTMLUListElement> {
   render?: (props: any) => React.ReactNode;
@@ -18,17 +18,36 @@ export function List({ children, render, ...props }: ListProps) {
 
 function Footer() {
   return (
-    <footer className={"bg-yellow p-20 flex"}>
-      <span
-        className={
-          "transform -rotate-90 bg-black text-white py-5 px-5 text-3xl"
-        }
-      >
+    <footer className={"bg-yellow p-20 flex gap-4"}>
+      <span className={"vertical text-6xl bg-black text-white px-10"}>
         Xenovrs
       </span>
-      <div className={"flex-grow "}>
-        <div className={"p-7 border-b border-b-black"}>
-          <span className={"inline-block transform -rotate-90"}>+ 3 (425) 521 60 21</span>
+      <div className={"flex-grow"}>
+        <div
+          className={"p-7 border-b border-b-black flex gap-4 pb-20 justify-between"}
+        >
+          <span className={"vertical"}>+ 3 (425) 521 60 21</span>
+          <List>
+            <strong className={"text-xl"}>Quick Links</strong>
+            {navRoutesList.map((i) => (
+              <a className={"uppercase font-bold"}>{i}</a>
+            ))}
+          </List>
+          <List>
+            <strong>Follow</strong>
+            <a>FACEBOOK</a>
+            <a>INSTAGRAM</a>
+            <a>TWITTER</a>
+            <a>LINKEDIN</a>
+          </List>
+          <form className={"md:w-80 flex flex-col gap-5"}>
+            <strong>Sign up to our newsletter</strong>
+            <input type={"email"} className={"active:outline-0 w-full block bg-transparent border-0 border-b-3 p-2"} />
+            <p className={"text-xs font-bold"}>
+              This site is protected by reCAPTHCHA and the Google Privacy Policy
+              and Terms of Service apply.
+            </p>
+          </form>
         </div>
         <div className={"flex justify-between"}>
           <div>© Centrix 2021. All Rights Resevered</div>

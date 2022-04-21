@@ -35,3 +35,10 @@ a {
     color: gray;
   }
 }
+
+.vertical {
+  writing-mode: vertical-rl;
+  white-space: nowrap;
+  text-align: center;
+  transform: rotate(180deg);
+}
