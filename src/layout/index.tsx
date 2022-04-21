@@ -24,7 +24,7 @@ function Footer() {
       </span>
       <div className={"flex-grow"}>
         <div
-          className={"p-7 border-b border-b-black flex gap-4 pb-20 justify-between"}
+          className={"p-7 border-b border-b-black flex gap-4 pb-20 mb-10 justify-between"}
         >
           <span className={"vertical"}>+ 3 (425) 521 60 21</span>
           <List>
