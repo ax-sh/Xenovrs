@@ -5,22 +5,22 @@ const BlogPage = () => {
   return (
     <Layout>
       <PageSectionCarousel className={"uppercase"}>
-        <section className=" panel red">
+        <section className="panel red">
           <h1 className="1">page one</h1>
         </section>
-        <section className=" panel green">
+        <section className="panel green">
           <h1 className="2">page two</h1>
         </section>
-        <section className=" panel yelow">
+        <section className="panel yelow">
           <h1 className="3">page tree</h1>
         </section>
-        <section className=" panel blue">
+        <section className="panel blue">
           <h1>page four</h1>
         </section>
-        <section className=" panel pink">
+        <section className="panel pink">
           <h1>page five</h1>
         </section>
-        <section className=" panel turkey">
+        <section className="panel turkey">
           <h1>page six</h1>
         </section>
       </PageSectionCarousel>
