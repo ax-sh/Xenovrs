@@ -4,7 +4,7 @@ import PageSectionCarousel from "../containers/PageSectionCarousel";
 const BlogPage = () => {
   return (
     <Layout>
-      <PageSectionCarousel>
+      <PageSectionCarousel className={"uppercase"}>
         <section className=" panel red">
           <h1 className="1">page one</h1>
         </section>
