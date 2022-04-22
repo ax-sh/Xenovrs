@@ -24,7 +24,9 @@ function Footer() {
       </span>
       <div className={"flex-grow"}>
         <div
-          className={"p-7 border-b border-b-black flex gap-4 pb-20 mb-10 justify-between"}
+          className={
+            "p-7 border-b border-b-black flex gap-4 pb-20 mb-10 justify-between"
+          }
         >
           <span className={"vertical"}>+ 3 (425) 521 60 21</span>
           <List>
@@ -34,18 +36,24 @@ function Footer() {
             ))}
           </List>
           <List>
-            <strong>Follow</strong>
-            <a>FACEBOOK</a>
-            <a>INSTAGRAM</a>
-            <a>TWITTER</a>
-            <a>LINKEDIN</a>
+            <strong className={"text-xl"}>Follow</strong>
+            <a className={"uppercase font-bold"}>FACEBOOK</a>
+            <a className={"uppercase font-bold"}>INSTAGRAM</a>
+            <a className={"uppercase font-bold"}>TWITTER</a>
+            <a className={"uppercase font-bold"}>LINKEDIN</a>
           </List>
           <form className={"md:w-80 flex flex-col gap-5"}>
             <strong>Sign up to our newsletter</strong>
-            <input type={"email"} className={"active:outline-0 w-full block bg-transparent border-0 border-b-3 p-2"} />
+            <input
+              type={"email"}
+              className={
+                "active:outline-0 w-full block bg-transparent border-0 border-b-3 p-2"
+              }
+            />
             <p className={"text-xs font-bold"}>
-              This site is protected by reCAPTHCHA and the Google Privacy Policy
-              and Terms of Service apply.
+              This site is protected by reCAPTHCHA and the Google{" "}
+              <b>Privacy Policy</b>
+              and <b>Terms of Service</b> apply.
             </p>
           </form>
         </div>
