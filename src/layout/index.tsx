@@ -32,7 +32,7 @@ function Footer() {
           <List>
             <strong className={"text-xl"}>Quick Links</strong>
             {navRoutesList.map((i) => (
-              <a className={"uppercase font-bold"}>{i}</a>
+              <a className={"uppercase font-bold"} key={i}>{i}</a>
             ))}
           </List>
           <List>
