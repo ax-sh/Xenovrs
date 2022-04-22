@@ -9,7 +9,7 @@ import { BrowserRouter as Router, useRoutes } from "react-router-dom";
 
 import routes from "~react-pages";
 
-console.log(routes);
+// console.log(routes);
 
 function Loader() {
     return <section className={"h-screen bg-black text-white text-4xl grid place-content-center"}>
