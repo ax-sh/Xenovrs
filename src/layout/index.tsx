@@ -18,14 +18,12 @@ export function List({ children, render, ...props }: ListProps) {
 
 function Footer() {
   return (
-    <footer className={"bg-yellow p-20 flex gap-4"}>
-      <span className={"vertical text-6xl bg-black text-white px-10"}>
-        Xenovrs
-      </span>
-      <div className={"flex-grow"}>
+    <footer className={"bg-yellow md:p-20 flex gap-4"}>
+      <span className={"vertical text-6xl bg-black text-white px-10"}>Xenovrs</span>
+      <div className={"flex-grow "}>
         <div
           className={
-            "p-7 border-b border-b-black flex gap-4 pb-20 mb-10 justify-between"
+            "p-5 border-b border-b-black flex md:flex-row flex-col gap-4 pb-20 mb-10 justify-between"
           }
         >
           <span className={"vertical"}>+ 3 (425) 521 60 21</span>
@@ -46,13 +44,10 @@ function Footer() {
             <strong>Sign up to our newsletter</strong>
             <input
               type={"email"}
-              className={
-                "active:outline-0 w-full block bg-transparent border-0 border-b-3 p-2"
-              }
+              className={"active:outline-0 w-full block bg-transparent border-0 border-b-3 p-2"}
             />
             <p className={"text-xs font-bold"}>
-              This site is protected by reCAPTHCHA and the Google{" "}
-              <b>Privacy Policy</b>
+              This site is protected by reCAPTHCHA and the Google <b>Privacy Policy</b>
               and <b>Terms of Service</b> apply.
             </p>
           </form>
