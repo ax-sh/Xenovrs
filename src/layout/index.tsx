@@ -38,7 +38,7 @@ function Footer() {
           <List>
             <strong className={"text-xl"}>Quick Links</strong>
             {navRoutesList.map((i) => (
-              <a key={i} className={"jjj uppercase font-bold text-black "}>
+              <a key={i} className={"uppercase font-bold text-black cursor-pointer"}>
                 {i}
               </a>
             ))}
@@ -46,7 +46,12 @@ function Footer() {
           <List>
             <strong className={"text-xl"}>Follow</strong>
             {Object.entries(links).map(([key, value]) => (
-              <a href={value} className={"uppercase font-bold pointer cursor-pointer"}>
+              <a
+                href={value}
+                className={
+                  "uppercase font-bold !text-black hover:text-black/80 pointer cursor-pointer"
+                }
+              >
                 {key}
               </a>
             ))}
@@ -55,7 +60,9 @@ function Footer() {
             <strong>Sign up to our newsletter</strong>
             <input
               type={"email"}
-              className={"active:outline-0 w-full block bg-transparent border-0 border-b-3 p-2"}
+              className={
+                "active:outline-0 outline-0  w-full block bg-transparent border-0 border-b-3 p-2"
+              }
             />
             <p className={"text-xs font-bold"}>
               This site is protected by reCAPTHCHA and the Google <b>Privacy Policy</b>
