@@ -19,9 +19,7 @@ function NavLinks() {
   return (
     <List
       className={"flex gap-2"}
-      render={(child) => (
-        <div className={"w-10 h-10 grid place-content-center"}>{child}</div>
-      )}
+      render={(child) => <div className={"w-10 h-10 grid place-content-center"}>{child}</div>}
     >
       <FaLinkedinIn size={28} />
       <CgFacebook size={28} />
