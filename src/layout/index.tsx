@@ -16,29 +16,40 @@ export function List({ children, render, ...props }: ListProps) {
   );
 }
 
+const links = {
+  FACEBOOK: "",
+  INSTAGRAM: "",
+  TWITTER: "",
+  LINKEDIN: "",
+};
+
 function Footer() {
   return (
     <footer className={"bg-yellow md:p-20 flex gap-4"}>
       <span className={"vertical text-6xl bg-black text-white px-10"}>Xenovrs</span>
+      <span className={"vertical md:hidden"}>+ 3 (425) 521 60 21</span>
       <div className={"flex-grow "}>
         <div
           className={
             "p-5 border-b border-b-black flex md:flex-row flex-col gap-4 pb-20 mb-10 justify-between"
           }
         >
-          <span className={"vertical"}>+ 3 (425) 521 60 21</span>
+          <span className={"vertical hidden md:inline-block"}>+ 3 (425) 521 60 21</span>
           <List>
             <strong className={"text-xl"}>Quick Links</strong>
             {navRoutesList.map((i) => (
-              <a className={"uppercase font-bold"}>{i}</a>
+              <a key={i} className={"jjj uppercase font-bold text-black "}>
+                {i}
+              </a>
             ))}
           </List>
           <List>
             <strong className={"text-xl"}>Follow</strong>
-            <a className={"uppercase font-bold"}>FACEBOOK</a>
-            <a className={"uppercase font-bold"}>INSTAGRAM</a>
-            <a className={"uppercase font-bold"}>TWITTER</a>
-            <a className={"uppercase font-bold"}>LINKEDIN</a>
+            {Object.entries(links).map(([key, value]) => (
+              <a href={value} className={"uppercase font-bold pointer cursor-pointer"}>
+                {key}
+              </a>
+            ))}
           </List>
           <form className={"md:w-80 flex flex-col gap-5"}>
             <strong>Sign up to our newsletter</strong>
@@ -52,7 +63,7 @@ function Footer() {
             </p>
           </form>
         </div>
-        <div className={"flex justify-between"}>
+        <div className={"md:flex justify-between"}>
           <div>© Centrix 2021. All Rights Resevered</div>
           <div>Privacy Policy</div>
         </div>
